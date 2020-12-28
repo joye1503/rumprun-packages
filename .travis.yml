@@ -1,6 +1,8 @@
 dist: xenial
 language: c
 filter_secrets: false
+virt: lxd
+group: edge
 cache:
   - ccache
   - apt
@@ -27,6 +29,7 @@ os:
 arch:
   - amd64
   - arm64
+  - arm64-graviton2
 
 stages:
   - test
